@@ -30,7 +30,7 @@ _3) Only Kotlin_
 3. 함수형으로 풀어낼 수 있는 간결함을 응용한다.
 4. 전사적으로 불변객체를 선호한다.
 5. Sealed class,Data Class, Value Class 등등을 통하여 UI 상태 및 데이터 형식을 효율적으로 관리한다.
-6. Kotlin으로 효율적인 추상화 설계를 최대한 만들어간다.
+6. Kotlin으로 효율적인 추상화 설계를 구축해간다.
 
 _4) Coding Rules Of Android Frame Work_
 1. 액티비티 간의 Intent로 소통시 Key는 데이터를 받는 Activity의 상수로 존재한다. 

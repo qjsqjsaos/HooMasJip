@@ -1,22 +1,37 @@
 # HooMasJip
-- 현재 위치 근처로 블로그 후기 맛집 포스팅들을 빠르게 찾아드립니다. 네이버 + 다음 등등 검색엔진을 활용하여 원하는 정보를 클릭 한번으로 얻어가실 수 있으리라 기대됩니다.
+- 현재 위치 근처로 블로그 후기 맛집 포스팅들을 빠르게 찾아드립니다. 
+- 네이버 + 다음 등등 검색엔진을 활용하여 원하는 정보를 클릭 한번으로 얻어가실 수 있으리라 기대됩니다.
+
+# 작업 순서 (내림차순 순서)
+1. Naver,Daum Api 검토
+2. 상세 기획 제작 (figma)
+3. UI 디자인 제작(스타일 가이드, 재사용 컴포넌트)
+4. 개발 셋팅 (Kts로 변화 , Library Dependency 등등 셋팅)
+5. Domain Module의 Data Model, UseCase Naming, Network Exception 처리 셋팅
+6. Data Module에서 Remote Connection, Local DataBase, Request, Response Model 등등 셋팅 
+7. Data Module 의 Remote/Local Data CRUD 테스트 코드 작성 
+8. Data Module CRUD 테스트 통과 후 DataSourece(옵션), Domain/Data Module Repository 패턴 구현, Data Mapper 구현
+9. Domain Module 의 UseCase, Util, base 등등 구현 구체화
+10. AppModule 셋팅 (manifest permission, core-ui, ui base , util,mapper 등등..)
+11. AppModule 에서 화면 단 작업 진행 (작업순 ui State Holder,ui State 제작 후 -> Ui)
 
 
 ## 사용할 기술 스펙
 - Compose + ViewBinding(XML)
 - Flow
-- Jatpack ViewModel 
+- Jatpack ViewModel ,Live Data 
 - Room
 - DataStore
 - Kts gradle
 - Paging 3 
 - Retrofit + moshi 
+- Hilt 
 
 ## 구성할 아키텍처
 _1) Multi Modul_   
 1. Data Module: Naver, Daum의 블로그 api로 데이터를 받아 비즈니스 처리 및 Room 으로 캐싱 저장 및 데이터 저장, DataStore로 단편 데이터 저장, 동기작업에 Shared Pref 활용 등등..
 2. Domain Module: 순수 Domain에 대한 비즈니스 로직 처리, 여러 데이터 소스의 복잡한 로직을 묶어서 UseCase로 각각의 기능을 SRP을 적용하여 처리함, Repository 를 통해 Dip로 계층을 구분
-3. App Module: 프레임워크 관한 상호작용, Ui와 UiStateHolder로 구분하여 효율적으로 이벤트 처리 및 UI상태를 처리함 
+3. App Module: 프레임워크 관한 상호작용, Ui와 UiStateHolder로 구분하여 효율적으로 이벤트 처리 및 UI상태를 처리함, UDF를 우선적으로 따르며, Flow/LiveData를 이용하여 데이터 스트림을 컨트롤한다.
 4. Shared Module : 모든 계층에서 공통적으로 사용할 데이터 형식이나, 전체 모듈에서 사용할 순수 코틀린 exts 등등..
 5. 전체: 각 Module에 mapper를 통해 각 계층에 맞는 데이터 형식으로 맵핑하여, 계층을 확실히 구분짓고 domain은 순수의 상태로 사용할 수 있게함 (Shared Modlue은 제외) 
 

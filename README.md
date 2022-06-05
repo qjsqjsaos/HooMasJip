@@ -1,20 +1,22 @@
 # HooMasJip
-- 현재 위치 근처로 블로그 후기 맛집 포스팅들을 빠르게 찾아드립니다. 
-- 네이버 + 다음 등등 검색엔진을 활용하여 원하는 정보를 클릭 한번으로 얻어가실 수 있으리라 기대됩니다.
+- 현재 위치 근처로 블로그 맛집 후기 글을 빠르게 찾아드립니다. 
+- 우연히 찾은 맛집 잊지 않도록 저장을 해드립니다.
+- 나만의 맛집 지도를 완성할 수 있습니다. 
 
 # 작업 순서 (내림차순 순서)
-1. Naver,Daum Api 검토
-2. 상세 기획 제작 (figma)
-3. UI 디자인 제작(스타일 가이드, 재사용 컴포넌트)
-4. 개발 셋팅 (Kts로 변화 , Library Dependency 등등 셋팅)
-5. Domain Module의 Data Model, UseCase Naming, Network Exception 처리 셋팅
-6. Data Module에서 Remote Connection, Local DataBase, Request, Response Model 등등 셋팅 
-7. Data Module 의 Remote/Local Data CRUD 테스트 코드 작성 
-8. Data Module CRUD 테스트 통과 후 DataSourece(옵션), Domain/Data Module Repository 패턴 구현, Data Mapper 구현
-9. Domain Module 의 UseCase, Util, base 등등 구현 구체화
-10. AppModule 셋팅 (manifest permission, core-ui, ui base , util,mapper 등등..)
-11. AppModule 에서 화면 단 작업 진행 (작업순 ui State Holder,ui State 제작 후 -> Ui)
-12. 전체 계층에서 사용할 수 있는 exts, Data Model의 추가가 필요할 시 shared Module 에 추가하여 사용
+1. 후맛집 예상 기획 **[완료]** -> [기획 링크](https://www.figma.com/file/pMXqc6klaWrkOC0aiQ7U4a/%ED%9B%84%EB%A7%9B%EC%A7%91-%EA%B0%84%EB%8B%A8-%EA%B8%B0%ED%9A%8D?node-id=0%3A1)
+2. Naver,Daum,Naver Map Api 검토
+3. 상세 기획 제작 (figma)
+4. UI 디자인 제작(스타일 가이드, 재사용 컴포넌트)
+5. 개발 셋팅 (Kts로 변화 , Library Dependency 등등 셋팅)
+6. Domain Module의 Data Model, UseCase Naming, Network Exception 처리 셋팅
+7. Data Module에서 Remote Connection, Local DataBase, Request, Response Model 등등 셋팅 
+8. Data Module 의 Remote/Local Data CRUD 테스트 코드 작성 
+9. Data Module CRUD 테스트 통과 후 DataSourece(옵션), Domain/Data Module Repository 패턴 구현, Data Mapper 구현
+10. Domain Module 의 UseCase, Util, base 등등 구현 구체화
+11. AppModule 셋팅 (manifest permission, core-ui, ui base , util,mapper 등등..)
+12. AppModule 에서 화면 단 작업 진행 (작업순 ui State Holder,ui State 제작 후 -> Ui)
+13. 전체 계층에서 사용할 수 있는 exts, Data Model의 추가가 필요할 시 shared Module 에 추가하여 사용
 
 ## 사용할 기술 스펙
 - Compose + ViewBinding(XML)
@@ -26,6 +28,8 @@
 - Paging 3 
 - Retrofit + moshi 
 - Hilt 
+- FireBase 
+- Naver Map
 
 ## 구성할 아키텍처
 _1) Multi Modul_   

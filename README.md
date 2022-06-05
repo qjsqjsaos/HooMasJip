@@ -14,7 +14,7 @@
 9. Domain Module 의 UseCase, Util, base 등등 구현 구체화
 10. AppModule 셋팅 (manifest permission, core-ui, ui base , util,mapper 등등..)
 11. AppModule 에서 화면 단 작업 진행 (작업순 ui State Holder,ui State 제작 후 -> Ui)
-
+12. 전체 계층에서 사용할 수 있는 exts, Data Model의 추가가 필요할 시 shared Module 에 추가하여 사용
 
 ## 사용할 기술 스펙
 - Compose + ViewBinding(XML)

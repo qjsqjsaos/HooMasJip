@@ -17,8 +17,8 @@ _1) Multi Modul_
 1. Data Module: Naver, Daum의 블로그 api로 데이터를 받아 비즈니스 처리 및 Room 으로 캐싱 저장 및 데이터 저장, DataStore로 단편 데이터 저장, 동기작업에 Shared Pref 활용 등등..
 2. Domain Module: 순수 Domain에 대한 비즈니스 로직 처리, 여러 데이터 소스의 복잡한 로직을 묶어서 UseCase로 각각의 기능을 SRP을 적용하여 처리함, Repository 를 통해 Dip로 계층을 구분
 3. App Module: 프레임워크 관한 상호작용, Ui와 UiStateHolder로 구분하여 효율적으로 이벤트 처리 및 UI상태를 처리함 
-4. 전체: 각각 Module에 mapper를 두어서 각 계층에 맞는 데이터 형식으로 맵핑하여, 계층을 확실히 구분짓고 domain은 순수의 상태로 사용할 수 있게함 
-5. Shared Module : 모든 계층에서 공통적으로 사용할 데이터 형식이나, 전체 모듈에서 사용할 순수 코틀린 exts 등등..
+4. Shared Module : 모든 계층에서 공통적으로 사용할 데이터 형식이나, 전체 모듈에서 사용할 순수 코틀린 exts 등등..
+5. 전체: 각 Module에 mapper를 통해 각 계층에 맞는 데이터 형식으로 맵핑하여, 계층을 확실히 구분짓고 domain은 순수의 상태로 사용할 수 있게함 (Shared Modlue은 제외) 
 
 _2) UI 테스트_
 1. ViewModel 로직 검증을 우선으로 한다. 

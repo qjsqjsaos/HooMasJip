@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 rootProject.name = "후맛집 - 후기로 찾는 맛집탐방"
 include ':app'
 include ':domain'
+include ':data'
+include ':shared'

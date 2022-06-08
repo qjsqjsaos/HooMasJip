@@ -7,7 +7,7 @@
 전체. 전체 계층에서 사용할 수 있는 exts, Data Model의 추가가 필요할 시 shared Module 에 추가하여 사용
 1. 후맛집 예상 기획 **[완료]** -> [기획 링크](https://www.figma.com/file/pMXqc6klaWrkOC0aiQ7U4a/%ED%9B%84%EB%A7%9B%EC%A7%91-%EA%B0%84%EB%8B%A8-%EA%B8%B0%ED%9A%8D?node-id=0%3A1)
 2. Naver,Daum,Naver Map Api,Sdk 검토 **[완료]** -> [링크](https://www.figma.com/file/xudzmtv5eMUcZTPQtcQs3q/%ED%9B%84%EB%A7%9B%EC%A7%91-API%2CSDK-%EC%A0%95%EB%B3%B4?node-id=0%3A1)
-3. 상세 기획 제작 (figma) **진행중** -> [링크](https://www.figma.com/file/GoFFBFs60dLzAvVv5cL5zO/Untitled?node-id=0%3A1)
+3. 상세 기획 제작 (figma) **[진행중]** -> [링크](https://www.figma.com/file/GoFFBFs60dLzAvVv5cL5zO/Untitled?node-id=0%3A1)
 4. UI 디자인 제작(스타일 가이드, 재사용 컴포넌트)
 5. 개발 셋팅 (Kts로 변화 , Library Dependency 등등 셋팅)
 6. Domain Module의 Data Model, UseCase Naming, Network Exception 처리 셋팅

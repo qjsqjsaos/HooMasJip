@@ -98,3 +98,6 @@ _5) Link for reference
 10. DDD
 - [Android Kagi 번역 - pluu] (https://pluu.github.io/blog/android/droidkaigi/2019/05/01/droidkaigi-ddd/)
 - [강남 언니 공식블로그] (https://blog.gangnamunni.com/post/TDDDD_Android/)
+
+11. 기타
+- [pluu 부스트 캠프 강의 ppt] (https://speakerdeck.com/pluu/modern-android-developer-annaeseo)

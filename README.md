@@ -56,3 +56,8 @@ _4) Coding Rules Of Android Frame Work_
 2. Theme를 변경하면 앱이 전체적으로 색상이 변경되는 유연한 구조를 가져갈 것 
 3. 현지화를 생각하여 스트링은 전체적으로 string.xml을 활용할 것 
 4. Content Provider, Broad Cast Receiver, Service 등등은 App Module 에서 별도로 잘 관리할 것 
+
+_5) Link for reference
+1. 클린아키텍처 네트워크 처리 토론 
+- [Duy Pham의 주장](https://proandroiddev.com/android-error-handling-in-clean-architecture-844a7fc0dc03)
+- [Roshaan Farrukh의 주장](https://levelup.gitconnected.com/error-handling-in-clean-architecture-9ff159a25d4a)

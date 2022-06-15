@@ -94,3 +94,7 @@ _5) Link for reference
 
 9. Jetpack 
 - [Jetpack ViewModel의 내부 원리] (https://proandroiddev.com/viewmodel-magic-revealed-330476b5ab27)
+
+10. DDD
+- [Android Kagi 번역 - pluu] (https://pluu.github.io/blog/android/droidkaigi/2019/05/01/droidkaigi-ddd/)
+- [강남 언니 공식블로그] (https://blog.gangnamunni.com/post/TDDDD_Android/)

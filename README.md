@@ -58,6 +58,6 @@ _4) Coding Rules Of Android Frame Work_
 4. Content Provider, Broad Cast Receiver, Service 등등은 App Module 에서 별도로 잘 관리할 것 
 
 _5) Link for reference
-1. 클린아키텍처 네트워크 처리 토론 
+1. Clean Architeture 설계의 네트워크 예외 처리 방식 토론 
 - [Duy Pham의 주장](https://proandroiddev.com/android-error-handling-in-clean-architecture-844a7fc0dc03)
 - [Roshaan Farrukh의 주장](https://levelup.gitconnected.com/error-handling-in-clean-architecture-9ff159a25d4a)

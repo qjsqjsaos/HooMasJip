@@ -87,3 +87,10 @@ _5) Link for reference
 7. Modularization 에 대한 사전 지식
 - [Ehsan Ghorbannezhad의 정리] (https://proandroiddev.com/android-modularization-preps-things-to-know-before-modularizing-your-app-deaf795aabec)
 
+8. 과거 아키텍처에 대한 논쟁의 흔적
+- [Fernando Cejas의 깃허브 이슈란](https://github.com/android10/Android-CleanArchitecture/issues)
+- [Mario Sanoguera de Lorenzo의 좋은 아키텍처란](https://proandroiddev.com/intro-to-app-architecture-922b392b21b2)
+- [Mario Sanoguera de Lorenzo의 클린 아키텍처 설명](https://proandroiddev.com/clean-architecture-data-flow-dependency-rule-615ffdd79e29)
+
+9. Jetpack 
+- [Jetpack ViewModel의 내부 원리] (https://proandroiddev.com/viewmodel-magic-revealed-330476b5ab27)

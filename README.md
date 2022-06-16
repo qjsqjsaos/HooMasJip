@@ -102,4 +102,5 @@ _5) Link for reference
 
 11. 기타
 - [pluu 부스트 캠프 강의 ppt - 모던 안드로이드 스킬들](https://speakerdeck.com/pluu/modern-android-developer-annaeseo)
+- [마틴파울러 홈페이지](https://www.martinfowler.com/)
 

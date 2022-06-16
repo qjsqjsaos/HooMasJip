@@ -64,40 +64,42 @@ _5) Link for reference
 - [Roshaan Farrukh의 주장](https://levelup.gitconnected.com/error-handling-in-clean-architecture-9ff159a25d4a)
 
 2. Ui 상태 관리, 데이터 관리, 이벤트 처리 방식  
- - [Pluu님의 발표 ppt] (https://speakerdeck.com/pluu/kodeu-pumjil-1-percent-olrigi)
- - [윤영직님의 발표 ppt] (https://speakerdeck.com/laco2951/ui-state-modeling-eoddeonge-joheulgga)
- - [김태현님의 발표 ppt] (https://drive.google.com/drive/folders/11_SPawq_FhUTZZSpTsDV_-lwBhGPp5Ar)
- - [박상권 이벤트처리] (https://medium.com/prnd/mvvm%EC%9D%98-viewmodel%EC%97%90%EC%84%9C-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%A5%BC-%EC%B2%98%EB%A6%AC%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-6%EA%B0%80%EC%A7%80-31bb183a88ce)
- - [컴포즈 뷰모델 이벤트 처리 by Saurabh Pant] (https://proandroiddev.com/cleaner-way-to-interact-between-composable-and-viewmodel-in-jetpack-compose-14c8b3a74bbe)
- - [재웅님의 retrofit의 response 모델링] (https://proandroiddev.com/modeling-retrofit-responses-with-sealed-classes-and-coroutines-9d6302077dfe)
+ - [Pluu님의 발표 ppt](https://speakerdeck.com/pluu/kodeu-pumjil-1-percent-olrigi)
+ - [윤영직님의 발표 ppt](https://speakerdeck.com/laco2951/ui-state-modeling-eoddeonge-joheulgga)
+ - [김태현님의 발표 ppt](https://drive.google.com/drive/folders/11_SPawq_FhUTZZSpTsDV_-lwBhGPp5Ar)
+ - [박상권 이벤트처리](https://medium.com/prnd/mvvm%EC%9D%98-viewmodel%EC%97%90%EC%84%9C-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%A5%BC-%EC%B2%98%EB%A6%AC%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-6%EA%B0%80%EC%A7%80-31bb183a88ce)
+ - [컴포즈 뷰모델 이벤트 처리 by Saurabh Pant](https://proandroiddev.com/cleaner-way-to-interact-between-composable-and-viewmodel-in-jetpack-compose-14c8b3a74bbe)
+ - [재웅님의 retrofit의 response 모델링](https://proandroiddev.com/modeling-retrofit-responses-with-sealed-classes-and-coroutines-9d6302077dfe)
 
 3. Test in android
-- [미스터 머글] (https://devvkkid.tistory.com/197)
+- [미스터 머글의 kotest 사용기](https://devvkkid.tistory.com/197)
 
 4. best Pratice
-- [헤이딜러 앱 구조 발표 ppt] (https://docs.google.com/presentation/d/18JLMtlQvqWnX7tJPpm4WBAcW0PLvGLQgmaPofpuG2vE/edit#slide=id.g11be1d0e282_0_432)
-- [안드로이드 권장 설계] (https://developer.android.com/jetpack/guide?hl=ko)
+- [헤이딜러 앱 구조 발표 ppt](https://docs.google.com/presentation/d/18JLMtlQvqWnX7tJPpm4WBAcW0PLvGLQgmaPofpuG2vE/edit#slide=id.g11be1d0e282_0_432)
+- [안드로이드 공식 권장 설계](https://developer.android.com/jetpack/guide?hl=ko)
 
 5. 안드로이드 clean Architeture 의 Use Cases/Interactors 가 필요한 이유
-- [Denis Brandi의 정리] (https://proandroiddev.com/why-you-need-use-cases-interactors-142e8a6fe576)
+- [Denis Brandi의 정리](https://proandroiddev.com/why-you-need-use-cases-interactors-142e8a6fe576)
 
 6. flow
-- [Alexey Bykov의 요약] (https://proandroiddev.com/kotlin-coroutines-flow-in-a-nutshell-90399fc9aed7)
+- [Alexey Bykov의 요약](https://proandroiddev.com/kotlin-coroutines-flow-in-a-nutshell-90399fc9aed7)
 
 7. Modularization 에 대한 사전 지식
-- [Ehsan Ghorbannezhad의 정리] (https://proandroiddev.com/android-modularization-preps-things-to-know-before-modularizing-your-app-deaf795aabec)
+- [Ehsan Ghorbannezhad의 정리](https://proandroiddev.com/android-modularization-preps-things-to-know-before-modularizing-your-app-deaf795aabec)
 
 8. 과거 아키텍처에 대한 논쟁의 흔적
+- [Martin Fowler 의 3계층](https://martinfowler.com/bliki/PresentationDomainDataLayering.html)
 - [Fernando Cejas의 깃허브 이슈란](https://github.com/android10/Android-CleanArchitecture/issues)
 - [Mario Sanoguera de Lorenzo의 좋은 아키텍처란](https://proandroiddev.com/intro-to-app-architecture-922b392b21b2)
 - [Mario Sanoguera de Lorenzo의 클린 아키텍처 설명](https://proandroiddev.com/clean-architecture-data-flow-dependency-rule-615ffdd79e29)
 
 9. Jetpack 
-- [Jetpack ViewModel의 내부 원리] (https://proandroiddev.com/viewmodel-magic-revealed-330476b5ab27)
+- [Jetpack ViewModel의 내부 원리](https://proandroiddev.com/viewmodel-magic-revealed-330476b5ab27)
 
 10. DDD
-- [Android Kagi 번역 - pluu] (https://pluu.github.io/blog/android/droidkaigi/2019/05/01/droidkaigi-ddd/)
-- [강남 언니 공식블로그] (https://blog.gangnamunni.com/post/TDDDD_Android/)
+- [Android Kagi 번역 DDD - pluu](https://pluu.github.io/blog/android/droidkaigi/2019/05/01/droidkaigi-ddd/)
+- [강남 언니 공식블로그 TDDDD](https://blog.gangnamunni.com/post/TDDDD_Android/)
 
 11. 기타
-- [pluu 부스트 캠프 강의 ppt] (https://speakerdeck.com/pluu/modern-android-developer-annaeseo)
+- [pluu 부스트 캠프 강의 ppt - 모던 안드로이드 스킬들](https://speakerdeck.com/pluu/modern-android-developer-annaeseo)
+

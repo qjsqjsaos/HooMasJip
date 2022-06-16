@@ -69,6 +69,7 @@ _5) Link for reference
  - [김태현님의 발표 ppt](https://drive.google.com/drive/folders/11_SPawq_FhUTZZSpTsDV_-lwBhGPp5Ar)
  - [박상권 이벤트처리](https://medium.com/prnd/mvvm%EC%9D%98-viewmodel%EC%97%90%EC%84%9C-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%A5%BC-%EC%B2%98%EB%A6%AC%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-6%EA%B0%80%EC%A7%80-31bb183a88ce)
  - [컴포즈 뷰모델 이벤트 처리 by Saurabh Pant](https://proandroiddev.com/cleaner-way-to-interact-between-composable-and-viewmodel-in-jetpack-compose-14c8b3a74bbe)
+ - [컴포즈 UI상태 처리 by Saurabh Pant](https://proandroiddev.com/updating-ui-using-state-management-in-jetpack-compose-e6120db7d695)
  - [재웅님의 retrofit의 response 모델링](https://proandroiddev.com/modeling-retrofit-responses-with-sealed-classes-and-coroutines-9d6302077dfe)
 
 3. Test in android

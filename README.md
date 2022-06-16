@@ -79,10 +79,10 @@ _5) Link for reference
 - [안드로이드 권장 설계] (https://developer.android.com/jetpack/guide?hl=ko)
 
 5. 안드로이드 clean Architeture 의 Use Cases/Interactors 가 필요한 이유
-- [Denis Brandi의 정리] https://proandroiddev.com/why-you-need-use-cases-interactors-142e8a6fe576
+- [Denis Brandi의 정리] (https://proandroiddev.com/why-you-need-use-cases-interactors-142e8a6fe576)
 
 6. flow
-- [Alexey Bykov의 요약](https://proandroiddev.com/kotlin-coroutines-flow-in-a-nutshell-90399fc9aed7)
+- [Alexey Bykov의 요약] (https://proandroiddev.com/kotlin-coroutines-flow-in-a-nutshell-90399fc9aed7)
 
 7. Modularization 에 대한 사전 지식
 - [Ehsan Ghorbannezhad의 정리] (https://proandroiddev.com/android-modularization-preps-things-to-know-before-modularizing-your-app-deaf795aabec)

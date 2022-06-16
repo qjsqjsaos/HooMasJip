@@ -97,6 +97,7 @@ _5) Link for reference
 9. Jetpack 
 - [Jetpack ViewModel의 내부 원리](https://proandroiddev.com/viewmodel-magic-revealed-330476b5ab27)
 - [Compose effect handlers](https://jorgecastillo.dev/jetpack-compose-effect-handlers)
+- [Compose Touch Event Handle](https://proandroiddev.com/jetpack-compose-under-the-hood-touch-events-c237ce1ff755)
 
 10. DDD
 - [Android Kagi 번역 DDD - pluu](https://pluu.github.io/blog/android/droidkaigi/2019/05/01/droidkaigi-ddd/)

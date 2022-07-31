@@ -1,4 +1,4 @@
-package kr.loner.hoomasjip.util
+package kr.loner.hoomasjip.sample.util
 
 import android.graphics.Color
 import kr.loner.shared.HexColor

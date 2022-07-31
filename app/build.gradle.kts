@@ -34,13 +34,19 @@ android {
 }
 
 dependencies {
+    /**TODO: 데이터 모듈은 없어야함, 샘플 코드 작성을 위해서 임시로 설정*/
+    implementation(project(":data"))
+
     implementation(project(":domain"))
     implementation(project(":shared"))
     implementation(Android.AndroidX.core)
     implementation(Android.AndroidX.appCompat)
-    implementation(Android.material)
+    implementation(Android.AndroidX.activity)
     implementation(Android.AndroidX.constraintLayout)
+    implementation(Android.AndroidX.LifeCycle.liveData)
+    implementation(Android.material)
     testImplementation(Kotlin.junit)
     androidTestImplementation(Android.AndroidX.Test.androidXJunit)
+
 
 }

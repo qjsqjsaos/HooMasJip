@@ -18,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="kr.loner.hoomasjip.sample.ui.SampleActivity" />
     </application>
 
 </manifest>

@@ -14,4 +14,5 @@ dependencies {
     implementation(project(":shared"))
 
     testImplementation(Kotlin.junit)
+    implementation(Kotlin.coroutine)
 }

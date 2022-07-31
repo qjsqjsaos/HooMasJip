@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="1.7">
+    <bytecodeTargetLevel target="1.8">
+      <module name="HooMasJip.buildSrc" target="11" />
       <module name="NetworkResourceControllTrApp.app" target="11" />
+      <module name="후맛집.app" target="11" />
+      <module name="후맛집.data" target="11" />
       <module name="후맛집_-_후기로_찾는_맛집탐방.app" target="11" />
       <module name="후맛집_-_후기로_찾는_맛집탐방.data" target="11" />
+      <module name="후맛집_후기로_찾는_맛집탐방.app" target="11" />
+      <module name="후맛집_후기로_찾는_맛집탐방.data" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

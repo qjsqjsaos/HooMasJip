@@ -9,7 +9,7 @@ import kr.loner.shared.model.FakeBlog
 
 object FakeApi {
     suspend fun getFakeMockNaverBlog(): List<FakeBlog> {
-        delay(300)
+        delay(1500)
         val sampleApiData = mutableListOf<FakeNaverBlog>().apply {
             repeat(10) { i ->
                 add(
@@ -26,7 +26,7 @@ object FakeApi {
 
 
     suspend fun getFakeMockDaumBlog(): List<FakeBlog> {
-        delay(300)
+        delay(1500)
         val sampleApiData = mutableListOf<FakeDaumBlog>().apply {
             repeat(10) { i ->
                 add(

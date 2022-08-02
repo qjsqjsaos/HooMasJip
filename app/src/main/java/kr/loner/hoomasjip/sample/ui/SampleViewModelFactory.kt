@@ -7,7 +7,7 @@ import kr.loner.domain.usecase.GetFakeBlogListUseCase
 import java.lang.IllegalArgumentException
 
 class SampleViewModelFactory: ViewModelProvider.Factory {
-    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if(modelClass.isAssignableFrom(SampleViewModel::class.java)){
             return SampleViewModel(GetFakeBlogListUseCase(FakeBlogRepositoryImpl)) as T
         }else{

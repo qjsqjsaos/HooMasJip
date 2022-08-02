@@ -1,9 +1,12 @@
 import kr.loner.buildsrc.AppVersions
 import kr.loner.buildsrc.Android
 import kr.loner.buildsrc.Kotlin
+
 plugins {
     id("com.android.application")
     kotlin("android")
+    kotlin("kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -31,6 +34,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
 }
 
 dependencies {
@@ -39,11 +46,19 @@ dependencies {
 
     implementation(project(":domain"))
     implementation(project(":shared"))
+    implementation(Android.AndroidX.Hilt.hiltViewModel)
     implementation(Android.AndroidX.core)
     implementation(Android.AndroidX.appCompat)
     implementation(Android.AndroidX.activity)
+    implementation(Android.AndroidX.fragment)
     implementation(Android.AndroidX.constraintLayout)
     implementation(Android.AndroidX.LifeCycle.liveData)
+    implementation(Android.AndroidX.LifeCycle.viewModelKtx)
+    implementation(Android.hilt)
+    implementation("androidx.appcompat:appcompat:1.4.2")
+    implementation("com.google.android.material:material:1.4.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    kapt(Android.hiltCompiler)
     implementation(Android.material)
     testImplementation(Kotlin.junit)
     androidTestImplementation(Android.AndroidX.Test.androidXJunit)

@@ -1,4 +1,4 @@
-package kr.loner.hoomasjip.sooyeolsample.base
+package kr.loner.hoomasjip.sooyeolsample.presentation.base
 
 import android.os.Bundle
 import android.widget.Toast

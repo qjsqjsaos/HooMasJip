@@ -6,13 +6,23 @@
     <data>
         <variable
             name="vm"
-            type="kr.loner.hoomasjip.sooyeolsample.ui.SooyeolViewModel" />
+            type="kr.loner.hoomasjip.sooyeolsample.presentation.ui.SooyeolViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".sooyeolsample.ui.SooyeolActivity">
+        tools:context=".sooyeolsample.presentation.ui.SooyeolActivity">
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프래그먼트 열기"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="@{() -> vm.openFragment()}"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

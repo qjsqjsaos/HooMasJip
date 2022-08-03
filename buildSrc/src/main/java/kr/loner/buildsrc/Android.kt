@@ -2,7 +2,7 @@ package kr.loner.buildsrc
 
 object Android {
     const val androidGradleVersion = "7.1.2"
-    const val hiltGradleVersion = "2.41"
+    const val hiltGradleVersion = "2.42"
     const val material = "com.google.android.material:material:1.6.1"
     const val hilt = "com.google.dagger:hilt-android:2.38.1"
     const val hiltCompiler = "com.google.dagger:hilt-android-compiler:2.38.1"

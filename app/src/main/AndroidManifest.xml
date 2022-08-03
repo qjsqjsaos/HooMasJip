@@ -3,6 +3,7 @@
     package="kr.loner.hoomasjip">
 
     <application
+        android:name=".sooyeolsample.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HooMasJip">
         <activity
-            android:name=".SooyeolActivity"
+            android:name="kr.loner.hoomasjip.sooyeolsample.presentation.ui.SooyeolActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

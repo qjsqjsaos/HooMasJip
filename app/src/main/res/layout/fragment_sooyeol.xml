@@ -5,19 +5,30 @@
     <data>
         <variable
             name="vm"
-            type="kr.loner.hoomasjip.sooyeolsample.ui.fragment.SooyeolFragViewModel" />
+            type="kr.loner.hoomasjip.sooyeolsample.presentation.ui.fragment.SooyeolFragViewModel" />
+        <import type="android.view.View"/>
     </data>
 
-    <FrameLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".sooyeolsample.ui.fragment.SooyeolFragment">
+        android:layout_height="match_parent">
 
-        <!-- TODO: Update blank fragment layout -->
-        <TextView
+        <FrameLayout
+            android:id="@+id/fakeBlogs"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    </FrameLayout>
+            <ProgressBar
+                android:visibility="@{vm.fakeBlogList.loading ? View.VISIBLE : View.GONE}"
+                android:id="@+id/progress_loading"
+                android:layout_marginTop="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+    </ScrollView>
+
 </layout>

@@ -4,9 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import dagger.hilt.android.AndroidEntryPoint
 import kr.loner.hoomasjip.sample.ui.SampleActivity
-import kr.loner.hoomasjip.sooyeolsample.ui.SooyeolActivity
+import kr.loner.hoomasjip.sooyeolsample.presentation.ui.SooyeolActivity
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

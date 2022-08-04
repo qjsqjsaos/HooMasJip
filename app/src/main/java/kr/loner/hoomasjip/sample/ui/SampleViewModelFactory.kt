@@ -14,5 +14,4 @@ class SampleViewModelFactory: ViewModelProvider.Factory {
             throw IllegalArgumentException()
         }
     }
-
 }

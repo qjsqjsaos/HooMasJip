@@ -13,21 +13,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <FrameLayout
+        <LinearLayout
             android:id="@+id/fakeBlogs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ProgressBar
-                android:visibility="@{vm.fakeBlogList.loading ? View.VISIBLE : View.GONE}"
+                android:visibility="@{vm.blogList.loading ? View.VISIBLE : View.GONE}"
                 android:id="@+id/progress_loading"
                 android:layout_marginTop="200dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"/>
 
-        </FrameLayout>
+        </LinearLayout>
 
     </ScrollView>
 

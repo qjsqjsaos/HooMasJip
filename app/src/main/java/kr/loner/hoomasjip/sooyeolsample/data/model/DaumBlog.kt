@@ -1,6 +1,6 @@
 package kr.loner.hoomasjip.sooyeolsample.data.model
 
-data class FakeDaumBlog(
+data class DaumBlog(
     val title:String,
     val contents:String,
 )

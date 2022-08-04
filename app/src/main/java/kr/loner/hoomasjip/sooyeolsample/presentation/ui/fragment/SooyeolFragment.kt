@@ -14,7 +14,7 @@ class SooyeolFragment : BaseFragment<FragmentSooyeolBinding, SooyeolFragViewMode
     override val viewModel: SooyeolFragViewModel by viewModels()
 
     override fun initLiveData() {
-        viewModel.fakeBlogList.observe(this) { uiFakeBlogs ->
+        viewModel.blogList.observe(this) { uiFakeBlogs ->
             binding.fakeBlogs.addChildUiFromFakeBlog(uiFakeBlogs.data.orEmpty())
         }
     }

@@ -5,10 +5,10 @@ import kotlinx.coroutines.delay
 import kr.loner.data.model.FakeDaumBlog
 import kr.loner.data.model.FakeNaverBlog
 import kr.loner.data.model.mapper.toFakeBlogList
-import kr.loner.shared.model.FakeBlog
+import kr.loner.shared.model.Blog
 
 object FakeApi {
-    suspend fun getFakeMockNaverBlog(): List<FakeBlog> {
+    suspend fun getFakeMockNaverBlog(): List<Blog> {
         delay(1500)
         val sampleApiData = mutableListOf<FakeNaverBlog>().apply {
             repeat(10) { i ->
@@ -25,7 +25,7 @@ object FakeApi {
     }
 
 
-    suspend fun getFakeMockDaumBlog(): List<FakeBlog> {
+    suspend fun getFakeMockDaumBlog(): List<Blog> {
         delay(1500)
         val sampleApiData = mutableListOf<FakeDaumBlog>().apply {
             repeat(10) { i ->

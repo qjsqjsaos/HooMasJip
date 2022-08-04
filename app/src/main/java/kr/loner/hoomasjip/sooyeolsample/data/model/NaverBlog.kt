@@ -1,6 +1,6 @@
 package kr.loner.hoomasjip.sooyeolsample.data.model
 
-data class FakeNaverBlog(
+data class NaverBlog(
     val title:String,
     val content:String
 )

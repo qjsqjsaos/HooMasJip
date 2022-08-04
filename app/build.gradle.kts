@@ -38,6 +38,11 @@ android {
         viewBinding = true
         dataBinding = true
     }
+//    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile::class).configureEach {
+//        kotlinOptions {
+//            freeCompilerArgs = freeCompilerArgs + "-Xjvm-default=all"
+//        }
+//    }
 }
 
 dependencies {
@@ -46,7 +51,6 @@ dependencies {
 
     implementation(project(":domain"))
     implementation(project(":shared"))
-    implementation(Android.AndroidX.Hilt.hiltViewModel)
     implementation(Android.AndroidX.core)
     implementation(Android.AndroidX.appCompat)
     implementation(Android.AndroidX.activity)
@@ -54,14 +58,13 @@ dependencies {
     implementation(Android.AndroidX.constraintLayout)
     implementation(Android.AndroidX.LifeCycle.liveData)
     implementation(Android.AndroidX.LifeCycle.viewModelKtx)
-    implementation(Android.hilt)
+    implementation(Android.Hilt.hilt)
     implementation("androidx.appcompat:appcompat:1.4.2")
     implementation("com.google.android.material:material:1.4.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    kapt(Android.hiltCompiler)
+    kapt(Android.Hilt.hiltCompiler)
+    kapt(Android.metadata)
     implementation(Android.material)
     testImplementation(Kotlin.junit)
     androidTestImplementation(Android.AndroidX.Test.androidXJunit)
-
-
 }

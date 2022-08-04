@@ -4,7 +4,7 @@ import kr.loner.shared.BlogSourceType
 import kr.loner.shared.HexColor
 import kr.loner.shared.exts.toColor
 
-data class FakeBlog(
+data class Blog(
     val id: Long,
     val title:String,
     val desc: String = "${id}번 묵데이터 입니다.",

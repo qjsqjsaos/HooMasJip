@@ -2,18 +2,18 @@ package kr.loner.hoomasjip.sooyeolsample.data.api
 
 import android.util.Log
 import kotlinx.coroutines.delay
-import kr.loner.hoomasjip.sooyeolsample.data.model.FakeDaumBlog
-import kr.loner.hoomasjip.sooyeolsample.data.model.FakeNaverBlog
-import kr.loner.hoomasjip.sooyeolsample.data.model.mapper.toFakeBlogList
-import kr.loner.shared.model.FakeBlog
+import kr.loner.hoomasjip.sooyeolsample.data.model.DaumBlog
+import kr.loner.hoomasjip.sooyeolsample.data.model.NaverBlog
+import kr.loner.hoomasjip.sooyeolsample.data.model.mapper.toBlogList
+import kr.loner.shared.model.Blog
 
-object FakeApi {
-    suspend fun getFakeMockNaverBlog(): List<FakeBlog> {
+object Api {
+    suspend fun getMockNaverBlog(): List<Blog> {
         delay(1500)
-        val sampleApiData = mutableListOf<FakeNaverBlog>().apply {
+        val sampleApiData = mutableListOf<NaverBlog>().apply {
             repeat(10) { i ->
                 add(
-                    FakeNaverBlog(
+                    NaverBlog(
                         title = "${i}번째 블로그 타이틀",
                         content = "${i}번째 블로그 설명 설명......."
                     )
@@ -21,16 +21,16 @@ object FakeApi {
             }
         }
         Log.d("checkk1111",sampleApiData.size.toString())
-        return sampleApiData.toFakeBlogList()
+        return sampleApiData.toBlogList()
     }
 
 
-    suspend fun getFakeMockDaumBlog(): List<FakeBlog> {
+    suspend fun getMockDaumBlog(): List<Blog> {
         delay(1500)
-        val sampleApiData = mutableListOf<FakeDaumBlog>().apply {
+        val sampleApiData = mutableListOf<DaumBlog>().apply {
             repeat(10) { i ->
                 add(
-                    FakeDaumBlog(
+                    DaumBlog(
                         title = "${i}번째 블로그 타이틀",
                         contents = "${i}번째 블로그 설명 설명......."
                     )
@@ -38,7 +38,7 @@ object FakeApi {
             }
         }.toList()
         Log.d("checkk2222",sampleApiData.size.toString())
-        return sampleApiData.toFakeBlogList()
+        return sampleApiData.toBlogList()
     }
 
 }

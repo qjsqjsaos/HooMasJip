@@ -4,8 +4,8 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import kr.loner.hoomasjip.sooyeolsample.data.repository.FakeBlogRepositoryImpl
-import kr.loner.hoomasjip.sooyeolsample.domain.repository.FakeBlogRepository
+import kr.loner.hoomasjip.sooyeolsample.data.repository.BlogRepositoryImpl
+import kr.loner.hoomasjip.sooyeolsample.domain.repository.BlogRepository
 import javax.inject.Singleton
 
 @Module
@@ -14,5 +14,5 @@ object RepositoryModule {
 
     @Provides
     @Singleton
-    fun provideFakeBlogRepository(): FakeBlogRepository = FakeBlogRepositoryImpl()
+    fun provideBlogRepository(): BlogRepository = BlogRepositoryImpl()
 }

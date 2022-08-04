@@ -8,36 +8,13 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/loner"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="로너님"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-    <Button
-        android:id="@+id/jeayoung"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="제영님"
-        android:layout_marginBottom="50dp"
+        android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <Button
-        android:id="@+id/sooyeol"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="수열"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </LinearLayout>

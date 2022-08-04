@@ -3,21 +3,21 @@ package kr.loner.hoomasjip.sooyeolsample.presentation.ui.fragment
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kr.loner.hoomasjip.sooyeolsample.domain.usecase.GetFakeBlogListUseCase
+import kr.loner.hoomasjip.sooyeolsample.domain.usecase.GetBlogListUseCase
 import kr.loner.hoomasjip.sample.model.UiStateSample
 import kr.loner.hoomasjip.sooyeolsample.presentation.base.BaseViewModel
-import kr.loner.shared.model.FakeBlog
+import kr.loner.shared.model.Blog
 import javax.inject.Inject
 
 
 @HiltViewModel
 class SooyeolFragViewModel @Inject constructor(
-    private val getFakeBlogListUseCase: GetFakeBlogListUseCase
+    private val getBlogListUseCase: GetBlogListUseCase
 ) : BaseViewModel() {
 
-    val fakeBlogList: LiveData<UiStateSample<List<FakeBlog>>> = liveData{
+    val blogList: LiveData<UiStateSample<List<Blog>>> = liveData{
         emit(UiStateSample.loading())
-        emit(UiStateSample.success(getFakeBlogListUseCase()))
+        emit(UiStateSample.success(getBlogListUseCase()))
     }
 
 }

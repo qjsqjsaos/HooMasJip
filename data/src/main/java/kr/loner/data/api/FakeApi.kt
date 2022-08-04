@@ -20,7 +20,6 @@ object FakeApi {
                 )
             }
         }
-        Log.d("checkk1111",sampleApiData.size.toString())
         return sampleApiData.toFakeBlogList()
     }
 
@@ -37,7 +36,6 @@ object FakeApi {
                 )
             }
         }.toList()
-        Log.d("checkk2222",sampleApiData.size.toString())
         return sampleApiData.toFakeBlogList()
     }
 

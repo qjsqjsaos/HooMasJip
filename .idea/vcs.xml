@@ -2,13 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/CosmoCalendar" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Hond_Camera" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/IamportAuthExample" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/ParaBaragitTest" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/TESTCustomView" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Test" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/lemon" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/pb-android" vcs="Git" />
   </component>
 </project>

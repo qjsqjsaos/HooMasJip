@@ -10,6 +10,8 @@
       <module name="후맛집_-_후기로_찾는_맛집탐방.data" target="11" />
       <module name="후맛집_후기로_찾는_맛집탐방.app" target="11" />
       <module name="후맛집_후기로_찾는_맛집탐방.data" target="11" />
+      <module name="후맛집_후기로_찾는_맛집탐방.paging3Sample" target="11" />
+      <module name="후맛집_후기로_찾는_맛집탐방.paging3sample" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

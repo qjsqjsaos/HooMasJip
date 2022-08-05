@@ -2,9 +2,9 @@ package kr.loner.hoomasjip.sooyeolsample.data.model.mapper
 
 import kr.loner.hoomasjip.sooyeolsample.data.model.NaverBlog
 import kr.loner.shared.BlogSourceType
-import kr.loner.shared.model.Blog
+import kr.loner.shared.model.FakeBlog
 
-private fun NaverBlog.toBlog() = Blog(
+private fun NaverBlog.toBlog() = FakeBlog(
     id = (0..10000000).random().toLong(),
     title = title,
     desc = this.content,

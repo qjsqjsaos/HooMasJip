@@ -20,7 +20,7 @@
             android:orientation="vertical">
 
             <ProgressBar
-                android:visibility="@{vm.blogList.loading ? View.VISIBLE : View.GONE}"
+                android:visibility="@{vm.fakeBlogList.loading ? View.VISIBLE : View.GONE}"
                 android:id="@+id/progress_loading"
                 android:layout_marginTop="200dp"
                 android:layout_width="wrap_content"

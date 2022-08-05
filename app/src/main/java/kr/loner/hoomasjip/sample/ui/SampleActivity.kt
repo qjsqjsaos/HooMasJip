@@ -10,7 +10,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.viewModels
 import kr.loner.hoomasjip.R
 import kr.loner.hoomasjip.sample.util.toResColor
-import kr.loner.shared.model.Blog
+import kr.loner.shared.model.FakeBlog
 
 class SampleActivity : ComponentActivity() {
     private val viewModel by viewModels<SampleViewModel> { SampleViewModelFactory() }
@@ -24,7 +24,7 @@ class SampleActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sample)
-        viewModel.blogList.observe(this) { uiFakeBlogs ->
+        viewModel.fakeBlogList.observe(this) { uiFakeBlogs ->
             if (uiFakeBlogs.loading) {
                 loadingBar.visibility = View.VISIBLE
             } else {
@@ -34,8 +34,8 @@ class SampleActivity : ComponentActivity() {
         }
     }
 
-    private fun LinearLayout.addChildUiFromFakeBlog(blogList: List<Blog>) {
-        blogList.forEach {
+    private fun LinearLayout.addChildUiFromFakeBlog(fakeBlogList: List<FakeBlog>) {
+        fakeBlogList.forEach {
             val item =
                 LayoutInflater.from(this@SampleActivity).inflate(R.layout.item_sample, this, false)
             val title = item.findViewById<TextView>(R.id.tv_title)

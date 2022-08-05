@@ -2,13 +2,13 @@ package kr.loner.data.repository
 
 import kr.loner.data.datasource.FakeRemoteDataSource
 import kr.loner.domain.repository.FakeBlogRepository
-import kr.loner.shared.model.Blog
+import kr.loner.shared.model.FakeBlog
 
 /**TODO:Hilt 로 Repository 주입 예정 */
 object FakeBlogRepositoryImpl : FakeBlogRepository {
-    override suspend fun getFakeBlogDataList(): List<Blog> {
+    override suspend fun getFakeBlogDataList(): List<FakeBlog> {
         return FakeRemoteDataSource.run {
-            emptyList<Blog>().plus(getFakeMockNaverBlog()).plus(getFakeMockDaumBlog())
+            emptyList<FakeBlog>().plus(getFakeMockNaverBlog()).plus(getFakeMockDaumBlog())
                 .shuffled()
         }
     }

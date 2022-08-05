@@ -1,7 +1,7 @@
 package kr.loner.hoomasjip.sooyeolsample.domain.repository
 
-import kr.loner.shared.model.Blog
+import kr.loner.shared.model.FakeBlog
 
 interface BlogRepository {
-    suspend fun getBlogDataList():List<Blog>
+    suspend fun getBlogDataList():List<FakeBlog>
 }

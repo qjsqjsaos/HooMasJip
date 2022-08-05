@@ -5,10 +5,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import kr.loner.domain.usecase.GetFakeBlogListUseCase
 import kr.loner.hoomasjip.sample.model.UiStateSample
-import kr.loner.shared.model.Blog
+import kr.loner.shared.model.FakeBlog
 
 class SampleViewModel(private val getFakeBlogListUseCase: GetFakeBlogListUseCase):ViewModel() {
-    val blogList:LiveData<UiStateSample<List<Blog>>> = liveData{
+    val fakeBlogList:LiveData<UiStateSample<List<FakeBlog>>> = liveData{
         emit(UiStateSample.loading())
         emit(UiStateSample.success(getFakeBlogListUseCase()))
     }

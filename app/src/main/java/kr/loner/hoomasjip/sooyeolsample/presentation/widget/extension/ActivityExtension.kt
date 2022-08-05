@@ -1,15 +1,14 @@
 package kr.loner.hoomasjip.sooyeolsample.presentation.widget.extension
 
 import android.view.LayoutInflater
-import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.TextView
 import kr.loner.hoomasjip.R
 import kr.loner.hoomasjip.sample.util.toResColor
-import kr.loner.shared.model.Blog
+import kr.loner.shared.model.FakeBlog
 
-fun LinearLayout.addChildUiFromFakeBlog(blogList: List<Blog>) {
-    blogList.forEach {
+fun LinearLayout.addChildUiFromFakeBlog(fakeBlogList: List<FakeBlog>) {
+    fakeBlogList.forEach {
         val item =
             LayoutInflater.from(this.context).inflate(R.layout.item_sample, this, false)
         val title = item.findViewById<TextView>(R.id.tv_title)

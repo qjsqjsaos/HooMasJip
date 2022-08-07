@@ -8,7 +8,10 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.viewModels
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.launch
 import kr.loner.hoomasjip.R
+import kr.loner.hoomasjip.sample.model.UiStateSample
 import kr.loner.hoomasjip.sample.util.toResColor
 import kr.loner.shared.model.FakeBlog
 
@@ -24,13 +27,16 @@ class SampleActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sample)
-        viewModel.fakeBlogList.observe(this) { uiFakeBlogs ->
-            if (uiFakeBlogs.loading) {
-                loadingBar.visibility = View.VISIBLE
-            } else {
-                loadingBar.visibility = View.GONE
+        lifecycleScope.launch {
+            viewModel.state.collect{ state ->
+                if(state is UiStateSample.Loading){
+                    loadingBar.visibility = View.VISIBLE
+                }
+                if(state is UiStateSample.Success<*>){
+                    loadingBar.visibility = View.GONE
+                    itemGroupLayout.addChildUiFromFakeBlog(state.data as List<FakeBlog>)
+                }else{}
             }
-            itemGroupLayout.addChildUiFromFakeBlog(uiFakeBlogs.data.orEmpty())
         }
     }
 

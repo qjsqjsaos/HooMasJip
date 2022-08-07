@@ -8,7 +8,7 @@ import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import kr.loner.paging3sample.R
-import kr.loner.paging3sample.data.api.model.Board
+import kr.loner.paging3sample.shared.Board
 
 class MainAdapter : PagingDataAdapter<Board, MainAdapter.ViewHolder>(
     object : DiffUtil.ItemCallback<Board>() {
@@ -19,7 +19,6 @@ class MainAdapter : PagingDataAdapter<Board, MainAdapter.ViewHolder>(
         override fun areContentsTheSame(oldItem: Board, newItem: Board): Boolean {
             return oldItem == newItem
         }
-
     }
 ) {
 
@@ -37,11 +36,9 @@ class MainAdapter : PagingDataAdapter<Board, MainAdapter.ViewHolder>(
 
     class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
         private val tvTitle = v.findViewById<TextView>(R.id.tv_title)
-        private val tvContent = v.findViewById<TextView>(R.id.tv_content)
 
         fun bind(board: Board) {
             tvTitle.text = board.title
-            tvContent.text = board.content
         }
     }
 }

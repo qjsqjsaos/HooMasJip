@@ -6,14 +6,13 @@ import androidx.paging.PagingData
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
-import kr.loner.paging3sample.data.BoardRepository
-import kr.loner.paging3sample.data.api.model.Board
+import kr.loner.paging3sample.shared.Board
+import kr.loner.paging3sample.domain.GetBoardPagingDataUseCase
 
-class MainViewModel(boardRepository: BoardRepository) : ViewModel() {
-    val boardList: StateFlow<PagingData<Board>> = boardRepository.pagingDataModel.flow.stateIn(
+class MainViewModel(getBoardPagingDataUseCase: GetBoardPagingDataUseCase) : ViewModel() {
+
+    val boardList: StateFlow<PagingData<Board>> = getBoardPagingDataUseCase().getPagingData.stateIn(
         viewModelScope, SharingStarted.WhileSubscribed(),
         PagingData.empty()
     )
-
-
 }

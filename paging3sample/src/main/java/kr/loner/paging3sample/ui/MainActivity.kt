@@ -10,17 +10,12 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import kr.loner.paging3sample.R
-import kr.loner.paging3sample.data.BoardRepository
-import kr.loner.paging3sample.data.api.MockApiService
 
 class MainActivity : AppCompatActivity() {
     private val mainAdapter = MainAdapter()
-    private val viewModel by viewModels<MainViewModel> {
-        MainViewModelFactory(
-            BoardRepository(
-                MockApiService()
-            )
-        )
+    private val viewModel by viewModels<MainViewModel> { MainViewModelFactory.createUseCase }
+    private val rvBoardList by lazy {
+        findViewById<RecyclerView>(R.id.rv_boardList)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,12 +24,9 @@ class MainActivity : AppCompatActivity() {
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.boardList.collectLatest { board ->
-                    findViewById<RecyclerView>(R.id.rv_datas).apply {
-                        if(adapter == null) {
-                            adapter = mainAdapter
-                        }else{
-                            mainAdapter.submitData(board)
-                        }
+                    rvBoardList.apply {
+                        if (adapter == null) adapter = mainAdapter
+                        mainAdapter.submitData(board)
                     }
                 }
             }

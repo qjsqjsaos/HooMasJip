@@ -45,7 +45,6 @@ dependencies {
     implementation(Android.AndroidX.paging3)
     implementation(Android.AndroidX.activity)
     implementation(Android.AndroidX.LifeCycle.lifeCycleRuntime)
-
     implementation(Kotlin.coroutine)
     testImplementation(Kotlin.junit)
     androidTestImplementation(Android.AndroidX.Test.androidXJunit)

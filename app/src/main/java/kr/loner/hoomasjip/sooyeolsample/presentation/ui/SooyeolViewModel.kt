@@ -1,15 +1,14 @@
 package kr.loner.hoomasjip.sooyeolsample.presentation.ui
 
 import androidx.lifecycle.LiveData
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kr.loner.hoomasjip.sooyeolsample.presentation.base.BaseViewModel
 import kr.loner.hoomasjip.sooyeolsample.presentation.widget.utils.SingleLiveEvent
 
 class SooyeolViewModel : BaseViewModel() {
 
-    private val _frag = SingleLiveEvent<Unit>()
-    val frag: LiveData<Unit> = _frag
+    private val _screenWhenTemp = SingleLiveEvent<Unit>()
+    val screenWhenTemp: LiveData<Unit> = _screenWhenTemp
 
-    fun openFragment() = _frag.call()
+    fun openFragment() = _screenWhenTemp.call()
 
 }

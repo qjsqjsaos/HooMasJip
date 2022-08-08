@@ -31,14 +31,11 @@ abstract class BaseFragment<B : ViewDataBinding, VM : ViewModel>(
             lifecycleOwner = viewLifecycleOwner
         }
 
-        init()
-        initLiveData()
+        initObserve()
         initListener()
     }
 
-    open fun init() {}
-
-    open fun initLiveData() {}
+    open fun initObserve() {}
 
     open fun initListener() {}
 }

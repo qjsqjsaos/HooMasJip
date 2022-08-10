@@ -5,22 +5,23 @@
 
 # 작업 순서 (내림차순 순서)
 전체. 전체 계층에서 사용할 수 있는 exts, Data Model의 추가가 필요할 시 shared Module 에 추가하여 사용
-1. 후맛집 예상 기획 **[완료]** -> [기획 링크](https://www.figma.com/file/pMXqc6klaWrkOC0aiQ7U4a/%ED%9B%84%EB%A7%9B%EC%A7%91-%EA%B0%84%EB%8B%A8-%EA%B8%B0%ED%9A%8D?node-id=0%3A1)
-2. Naver,Daum,Naver Map Api,Sdk 검토 **[완료]** -> [링크](https://www.figma.com/file/xudzmtv5eMUcZTPQtcQs3q/%ED%9B%84%EB%A7%9B%EC%A7%91-API%2CSDK-%EC%A0%95%EB%B3%B4?node-id=0%3A1)
+1. 후맛집 기획 **[완료]** -> [기획 링크](https://www.figma.com/file/pMXqc6klaWrkOC0aiQ7U4a/%ED%9B%84%EB%A7%9B%EC%A7%91-%EA%B0%84%EB%8B%A8-%EA%B8%B0%ED%9A%8D?node-id=0%3A1)
+2. 기술 검토 **[완료]** -> [링크](https://www.figma.com/file/xudzmtv5eMUcZTPQtcQs3q/%ED%9B%84%EB%A7%9B%EC%A7%91-API%2CSDK-%EC%A0%95%EB%B3%B4?node-id=0%3A1)
 3. 상세 기획 제작 (figma) **[완료]** -> [링크](https://www.figma.com/file/GoFFBFs60dLzAvVv5cL5zO/Untitled?node-id=0%3A1)
 4. gradle 셋팅 (Kts로 변화 , Library Dependency 관리 셋팅) **[완료]**
-5. App Architecture 의논 및 프로토타입 제작 **[완료]** 
-6. Data 모델링, 필요한 api 목록 구성 -> 진행중 
-7. SharedModule 에서 공유할 DataModel 셋팅 
-7. DataModule 에서 FireBase,Retrofit2, Request, Response Model, PagingSource, Shared Pref or DataStore 등등 셋팅 
-5. Domain Module의 , UseCase Naming, Network Exception 등등 셋팅
-7. Data Module 의 Remote/Local Data CRUD 테스트 (유닛 테스트)
-8. Data Module CRUD 테스트 통과 후 DataSourece(옵션), Domain/Data Repository 패턴 구현, Mapper 구현(data -> shared)
-9. Domain Module 의 UseCase, base 등등 구현 구체화
-10. AppModule 셋팅 (manifest permission, core-ui, ui base , util, ui model mapper,base 등등..)
-11. AppModule 의 ViewModel data로 프레젠테이션 로직 작업 
-12. UI 디자인 완성 (스타일 가이드, 재사용 컴포넌트) **진행 대기**
-13. AppModule 의 전체 View 작업 
+5. 앱 아이켁처 의논 및 프로토타입 제작 **[완료]** 
+6. 데이터 모델링, 필요한 api 목록 구성 -> **진행중 **
+7. **Shared**: 공유 모델 생성 
+8. **Data**: FireBase,Retrofit2, Request, Response Model, PagingSource, Shared Pref or DataStore 등등 셋팅 
+9. **Domain**: UseCase Naming, Network Exception 등등 셋팅
+10. **Data**: Remote/Local Data CRUD 테스트 (유닛 테스트)
+11. **Data**: CRUD 테스트 통과 후 DataSourece(옵션), Domain/Data Repository 패턴 구현, Mapper 구현(data -> shared)
+12. **Domain**:  UseCase, base 등등 구현 구체화
+13. **App**: manifest permission, core-ui, ui base , util, ui model mapper,base 등등.. 셋팅
+14. **App**: ViewModel 에 프레젠테이션 로직 작성
+15. **디자인**: UI 디자인 완성 (스타일 가이드, 재사용 컴포넌트) **진행 대기**
+16. **App**: 앱 테마에 맞는 커스텀 뷰 제작 
+17. **App**: 전체 View 작업 
 
 
 ## 사용할 기술 스펙

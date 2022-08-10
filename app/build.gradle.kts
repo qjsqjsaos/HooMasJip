@@ -56,7 +56,7 @@ dependencies {
     implementation(Android.AndroidX.fragment)
     implementation(Android.AndroidX.constraintLayout)
     implementation(Android.AndroidX.LifeCycle.liveData)
-    implementation(Android.AndroidX.LifeCycle.viewModelKtx)
+    implementation(Android.AndroidX.LifeCycle.viewModel)
     implementation(Android.Hilt.hilt)
     implementation("androidx.appcompat:appcompat:1.4.2")
     implementation("com.google.android.material:material:1.4.0")

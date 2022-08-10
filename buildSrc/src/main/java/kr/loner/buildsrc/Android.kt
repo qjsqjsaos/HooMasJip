@@ -27,8 +27,6 @@ object Android {
             private val lifecycle_version = "2.5.1"
             private val arch_version = "2.1.0"
             val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
-
-            val viewModelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
              val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
             val lifeCycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
         }
@@ -40,4 +38,3 @@ object Android {
          
         }
     }
-}

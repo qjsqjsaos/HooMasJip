@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="vm"
+            type="kr.loner.hoomasjip.sample.ui.SampleViewModel"/>
+    </data>
 
-    <LinearLayout
-        android:id="@+id/fakeBlogs"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <ProgressBar
-            android:id="@+id/progress_loading"
-            android:layout_marginTop="200dp"
-            android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/fakeBlogs"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
-    </LinearLayout>
-</ScrollView>
+            app:sampleAddItemView="@{vm.fakeBlogList.data}"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progress_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="200dp"
+                android:visibility="@{vm.fakeBlogList.loading ? View.VISIBLE : View.GONE}" />
+        </LinearLayout>
+    </ScrollView>
+</layout>

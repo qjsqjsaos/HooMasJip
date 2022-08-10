@@ -7,8 +7,8 @@ import kr.loner.paging3sample.shared.Board
 class MockApiService {
     fun getDataModelListByExampleApiConnect(page: Int): ApiPagingDataModel<Board> {
 
-        val prevListSize = (page * DefaultSize) - DefaultSize
         val nextListSize = page * DefaultSize
+        val prevListSize = nextListSize - DefaultSize
         return ApiPagingDataModel(
             App.dataModelList.subList(prevListSize, nextListSize).toList(),
             page

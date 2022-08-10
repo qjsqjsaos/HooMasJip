@@ -19,19 +19,5 @@ class SampleViewModel(private val getFakeBlogListUseCase: GetFakeBlogListUseCase
         emit(UiStateSample.success(getFakeBlogListUseCase()))
     }
 
-//    private val _uiState  = MutableStateFlow<UiStateSample>(UiStateSample.Loading)
-//    val state : StateFlow<UiStateSample> = _uiState.asStateFlow()
-//
-//    init {
-//        viewModelScope.launch {
-//            _uiState.value = UiStateSample.Loading
-//            try{
-//                val result = getFakeBlogListUseCase()
-//                _uiState.value = UiStateSample.Success(result)
-//            }catch (e : Throwable){
-//                _uiState.value = UiStateSample.Failure(e)
-//            }
-//        }
-//    }
 }
 

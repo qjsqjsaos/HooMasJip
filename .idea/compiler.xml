@@ -3,6 +3,8 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.8">
       <module name="HooMasJip.buildSrc" target="11" />
+      <module name="HooMasJip.buildSrc.main" target="11" />
+      <module name="HooMasJip.buildSrc.test" target="11" />
       <module name="NetworkResourceControllTrApp.app" target="11" />
       <module name="후맛집.app" target="11" />
       <module name="후맛집.data" target="11" />

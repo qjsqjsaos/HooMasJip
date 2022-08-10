@@ -18,7 +18,7 @@ class SampleActivity : ComponentActivity() {
         findViewById<ProgressBar>(R.id.progress_loading)
     }
     private val itemGroupLayout by lazy {
-        findViewById<LinearLayout>(R.id.linear_fakeBlogs)
+        findViewById<LinearLayout>(R.id.fakeBlogs)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

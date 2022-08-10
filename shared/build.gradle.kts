@@ -3,6 +3,7 @@ import kr.loner.buildsrc.Kotlin
 plugins {
     id("java-library")
     kotlin("jvm")
+    kotlin("kapt")
 }
 
 java {

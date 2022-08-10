@@ -10,7 +10,7 @@
 3. 상세 기획 제작 (figma) **[완료]** -> [링크](https://www.figma.com/file/GoFFBFs60dLzAvVv5cL5zO/Untitled?node-id=0%3A1)
 4. gradle 셋팅 (Kts로 변화 , Library Dependency 관리 셋팅) **[완료]**
 5. 앱 아이켁처 의논 및 프로토타입 제작 **[완료]** 
-6. 데이터 모델링, 필요한 api 목록 구성 -> **진행중 **
+6. 데이터 모델링, 필요한 api 목록 구성 -> **진행중**
 7. **Shared**: 공유 모델 생성 
 8. **Data**: FireBase,Retrofit2, Request, Response Model, PagingSource, Shared Pref or DataStore 등등 셋팅 
 9. **Domain**: UseCase Naming, Network Exception 등등 셋팅

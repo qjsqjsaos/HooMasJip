@@ -20,3 +20,4 @@ include(
         ":data",
         ":shared"
 )
+include(":paging3sample")

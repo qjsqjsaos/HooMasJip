@@ -1,9 +1,10 @@
 
 plugins {
-    id("com.android.application") version kr.loner.buildsrc.Android.androidGradleVersion apply false
+    id("com.android.application") version "7.1.2" apply false
     id("com.android.library") version kr.loner.buildsrc.Android.androidGradleVersion apply false
     id("com.google.dagger.hilt.android") version kr.loner.buildsrc.Android.hiltGradleVersion apply false
     kotlin("android") version kr.loner.buildsrc.Kotlin.kotlinVersion apply false
+
     kotlin("jvm") version kr.loner.buildsrc.Kotlin.kotlinVersion apply false
 }
 

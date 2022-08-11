@@ -4,7 +4,7 @@ plugins {
     id("com.android.library") version kr.loner.buildsrc.Android.androidGradleVersion apply false
     id("com.google.dagger.hilt.android") version kr.loner.buildsrc.Android.hiltGradleVersion apply false
     kotlin("android") version kr.loner.buildsrc.Kotlin.kotlinVersion apply false
-
+    kotlin("plugin.serialization") version "1.6.21"
     kotlin("jvm") version kr.loner.buildsrc.Kotlin.kotlinVersion apply false
 }
 

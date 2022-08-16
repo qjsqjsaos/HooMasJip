@@ -25,13 +25,14 @@
 
 
 ## 사용할 기술 스펙
-- MVVM + Aac DataBinding(XML)
+- MVVM + Jatpack Compose
 - Flow
 - Jatpack ViewModel ,Live Data 
 - DataStore ?: Sharedpreferences
 - Kts gradle
 - Paging 3 
-- Retrofit + moshi ?: gson ?: kotlinx.serialization
+- Retrofit 
+- Kotlin Serialization
 - Hilt 
 - FireBase 
 - Naver Map

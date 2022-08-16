@@ -10,4 +10,4 @@ data class NaverBlog(
     override val info: String?,
     override val img: String?,
     override val blogUrl: String?
-) : Blog
+) : Blog()

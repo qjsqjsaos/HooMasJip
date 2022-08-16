@@ -15,4 +15,4 @@ data class KakaoUser(
     override val name: String,
     override val myGoodPlaces: List<GoodPlace>,
     override val wishList: List<Blog>
-) : User
+) : User()

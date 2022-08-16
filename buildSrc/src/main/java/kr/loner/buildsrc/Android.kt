@@ -2,7 +2,7 @@ package kr.loner.buildsrc
 
 object Android {
     const val androidGradleVersion = "7.1.2"
-    const val hiltGradleVersion = "2.42"
+    const val hiltGradleVersion = "2.4.2"
     const val material = "com.google.android.material:material:1.6.1"
     const val metadata = "org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.4.2"
 

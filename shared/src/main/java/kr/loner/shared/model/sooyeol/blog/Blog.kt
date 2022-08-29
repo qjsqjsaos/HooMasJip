@@ -14,9 +14,9 @@ import kr.loner.shared.BlogType
 data class Blog(
     val id: Long,
     val title: String?,
-    val info: String?,
-    val img: String?,
-    val blogUrl: String?,
+    val info: String = "",
+    val img: String = "",
+    val blogUrl: String,
     val type: BlogType
 )
 

@@ -7,3 +7,13 @@ enum class BlogSourceType {
     NaverBlog,
     DaumBlog
 }
+
+enum class BlogType {
+    Naver,
+    Daum
+}
+
+enum class UserType {
+    Google,
+    Kakao
+}

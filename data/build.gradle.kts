@@ -1,8 +1,11 @@
 import kr.loner.buildsrc.Kotlin
 import kr.loner.buildsrc.AppVersions
+import kr.loner.buildsrc.Network
+
 plugins {
     id("com.android.library")
     kotlin("android")
+    id("org.jetbrains.kotlin.plugin.serialization")
 }
 
 android{
@@ -15,4 +18,11 @@ dependencies {
 
     testImplementation(Kotlin.junit)
     implementation(Kotlin.coroutine)
+
+    implementation(Network.retrofit)
+    implementation(Network.okInterceptor)
+    implementation(Network.okhttp)
+    implementation(Network.kSerializaion)
+    implementation(Network.serialConverter)
+    implementation(Network.dateTime)
 }

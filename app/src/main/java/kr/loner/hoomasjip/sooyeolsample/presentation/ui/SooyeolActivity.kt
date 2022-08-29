@@ -3,17 +3,16 @@ package kr.loner.hoomasjip.sooyeolsample.presentation.ui
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.viewModels
-import dagger.hilt.android.AndroidEntryPoint
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.launch
 import kr.loner.hoomasjip.R
 import kr.loner.hoomasjip.databinding.ActivitySooyeolBinding
 import kr.loner.hoomasjip.sooyeolsample.presentation.base.BaseActivity
-import kr.loner.hoomasjip.sooyeolsample.presentation.ui.fragment.SooyeolFragment
 
-@AndroidEntryPoint
-class SooyeolActivity : BaseActivity<ActivitySooyeolBinding, SooyeolViewModel>(R.layout.activity_sooyeol) {
 
-    override val viewModel: SooyeolViewModel by viewModels()
+class SooyeolActivity : BaseActivity<ActivitySooyeolBinding>(R.layout.activity_sooyeol) {
+
 
     companion object {
         fun newIntent(context: Context?): Intent = Intent(context, SooyeolActivity::class.java)
@@ -21,16 +20,12 @@ class SooyeolActivity : BaseActivity<ActivitySooyeolBinding, SooyeolViewModel>(R
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val viewModel = ViewModelProvider(this, SooyeolViewModelFactory())[SooyeolViewModel::class.java]
         //onCreate override 하여 사용하기
-    }
-
-    override fun initObserve() {
-        viewModel.screenWhenTemp.observe(this) {
-            supportFragmentManager
-                .beginTransaction()
-                .add(android.R.id.content, SooyeolFragment())
-                .addToBackStack(null)
-                .commit()
+        lifecycleScope.launch {
+            val test = viewModel.getBlogList()
+            shortShowToast(test.toString())
         }
     }
+
 }

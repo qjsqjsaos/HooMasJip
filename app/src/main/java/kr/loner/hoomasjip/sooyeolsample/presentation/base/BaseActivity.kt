@@ -8,7 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import kr.loner.hoomasjip.BR
 
-abstract class BaseActivity<V : ViewDataBinding, VM : BaseViewModel>(
+abstract class BaseActivity<V : ViewDataBinding>(
     @LayoutRes private val layoutResId: Int
 ) : AppCompatActivity() {
 
@@ -16,13 +16,13 @@ abstract class BaseActivity<V : ViewDataBinding, VM : BaseViewModel>(
 
     lateinit var binding: V
 
-    abstract val viewModel: VM
+//    abstract val viewModel: VM
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = DataBindingUtil.setContentView(this, layoutResId)
-        binding.setVariable(BR.vm, viewModel)
+//        binding.setVariable(BR.vm, viewModel)
         binding.lifecycleOwner = this
 
         initObserve()

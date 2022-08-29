@@ -22,4 +22,4 @@ data class GoodPlace(
     val date: String?,
     val phoneNum: String?,
     val address: String?
-) : Place()
+) : Place

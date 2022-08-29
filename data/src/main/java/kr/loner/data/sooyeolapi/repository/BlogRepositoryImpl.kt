@@ -10,6 +10,7 @@ import kr.loner.shared.model.sooyeol.blog.Blog
 import okhttp3.Response
 import retrofit2.Call
 import retrofit2.Callback
+import retrofit2.HttpException
 
 class BlogRepositoryImpl : BlogRepository {
 
@@ -26,18 +27,18 @@ class BlogRepositoryImpl : BlogRepository {
                 start = start,
                 sort = sort
             )
+        // TODO: 여기서 막힘. 데이터 왜 못불러 오는지 네이버 홈페이지 예제 확인할 것 
         response.enqueue(object : Callback<NaverBlog?> {
             override fun onResponse(
                 call: Call<NaverBlog?>,
                 response: retrofit2.Response<NaverBlog?>
             ) {
-                // TODO: 이거 값 나오지는지 확인해보자 
+                Log.d("리스폰스", response.body()?.bloggername.toString())
             }
 
             override fun onFailure(call: Call<NaverBlog?>, t: Throwable) {
-               
+                
             }
-
         })
 //        try {
 //            val api = RetrofitClient.getClient(BlogType.Naver)!!.create(BlogApi::class.java)
@@ -66,6 +67,5 @@ class BlogRepositoryImpl : BlogRepository {
 //            Log.d("에러", error.toString())
 //            //에외 처리하기
 //        }
-//        return null
     }
 }

@@ -21,3 +21,4 @@ include(
         ":shared"
 )
 include(":paging3sample")
+include(":apisample")

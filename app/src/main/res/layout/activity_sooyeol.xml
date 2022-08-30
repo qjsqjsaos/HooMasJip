@@ -6,7 +6,7 @@
     <data>
         <variable
             name="vm"
-            type="kr.loner.hoomasjip.sooyeolsample.presentation.ui.SooyeolViewModel" />
+            type="com.example.apisample.presentation.ui.SooyeolViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

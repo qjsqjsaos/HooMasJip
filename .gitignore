@@ -13,3 +13,4 @@
 .externalNativeBuild
 .cxx
 local.properties
+/apisample/src/main/java/com/example/apisample/presentation/widget/utils/ApiKey.kt

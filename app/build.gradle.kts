@@ -37,11 +37,6 @@ android {
     buildFeatures {
         dataBinding = true
     }
-//    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile::class).configureEach {
-//        kotlinOptions {
-//            freeCompilerArgs = freeCompilerArgs + "-Xjvm-default=all"
-//        }
-//    }
 }
 
 dependencies {

@@ -35,7 +35,7 @@ interface BlogApi {
 
     /*
     * 다음 블로그의 정보를 가져옵니다.
-    * Authorization : 네이티브 앱 키입니다.
+    * Authorization : 앱 API키입니다.
     * query : 원하는 검색 문자열입니다.
     * sort : 결과 문서 정렬 방식입니다. "accuracy"(정확도순) -> 기본값, "recency"(최신순)
     * page : 결과 페이지 번호 1 ~ 50 사이, 기본값 1

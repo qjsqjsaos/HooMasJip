@@ -30,7 +30,6 @@ class BlogRepositoryImpl : BlogRepository {
                 }
             }
         } catch (error: Exception) {
-            Log.d("네이버 에러", error.toString())
             return emptyList()
         }
         return emptyList()
@@ -56,7 +55,6 @@ class BlogRepositoryImpl : BlogRepository {
                 }
             }
         } catch (error: Exception) {
-            Log.d("다음 에러", error.toString())
             return emptyList()
         }
         return emptyList()
